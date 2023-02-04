@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <!-- title and description -->
+        <title>Title</title>
+        <meta name="description" content="Description content.">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <!-- styles -->
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <!-- icons -->
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+        <link rel="apple-touch-icon" href="src/icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="src/icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="src/icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="src/icons/touch-icon-ipad-retina.png">
+        <!-- open graph -->
+        <meta property="og:title" content="Open graph title" />
+        <!--
+        <meta property="og:type" content="video/mp4" />
+        <meta property="og:video" content="https://site.com/video/example.mp4" />
+        -->
+        <!--
+        <meta property="og:type" content="audio/mp3" />
+        <meta property="og:audio" content="https://site.com/audio/example.mp3" />
+        -->
+        <meta property="og:type" content="article" /> <!-- if not audio and not video -->
+        <meta property="og:url" content="https://website.com/" />
+        <meta property="og:image" content="src/icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
+        <meta property="og:site_name" content="website.com" /> <!-- not important -->
+        <meta property="og:description" content="Description content." /> <!-- not important -->
+        <meta property="og:locale" content="en_US" /> <!-- default: "en_US" -->
+    </head>
+    <body>
+        <form>
+            <label for="name">Введите имя</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+
+            <label for="password">Введите пароль</label>
+            <input type="text" name="password" id="password">
+            <br><br>
+
+            <label for="birthday">Введите дату своего рождения</label>
+            <input type="date" name="birthday" id="birthday">
+            <br><br>
+
+            <label for="languages">Выберите языки программирования</label>
+            <select name="languages" id="languages" multiple>
+                <option>JavaScript | TypeScript</option>
+                <option>C#</option>
+                <option>Ruby</option>
+                <option>Python</option>
+                <option>Go</option>
+            </select>
+            <br><br>
+
+            <p>Выберите свою специальность</p>
+            <input type="radio" id="front-end" name="specializations">
+            <label for="front-end">Front-End</label>
+            <br>
+            <input type="radio" id="back-end" name="specializations">
+            <label for="back-end">Back-End</label>
+            <br>
+            <input type="radio" id="full-stack" name="specializations">
+            <label for="full-stack">Full-Stack</label>
+            <br><br>
+
+            <input type="checkbox" id="analyze-data" name="analyze-data">
+            <label for="analyze-data">Нажимая сюда, вы разрешаете нам и нашим партнёрам обрабатывать ведённые вами данные в соответствии с нашей <a href="">Политикой Конфиденциальности</a></label>
+            <br><br>
+
+            <label for="additional-info">Дополнительно</label>
+            <input type="text" id="additional-info" name="additional-info">
+            <br><br>
+
+            <input type="button" id="send" name="send" value="Отправить">
+            <input type="reset" id="clear" name="clear" value="Очистить поля">
+        </form>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
